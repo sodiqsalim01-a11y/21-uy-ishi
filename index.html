@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Slider Sayt</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-blue-100 to-white min-h-screen flex flex-col items-center justify-center p-6">
+
+  <!-- Sarlavha -->
+  <h1 class="text-4xl sm:text-5xl font-extrabold text-blue-700 animate-bounce mb-10 text-center">
+    Xush kelibsiz
+  </h1>
+
+  <!-- Swiper Slider -->
+  <div class="swiper w-full max-w-2xl shadow-xl rounded-lg">
+    <div class="swiper-wrapper">
+
+      <!-- Har bir slayd - link bilan o‘ralgan -->
+      <!-- 1 -->
+      <a href="https://t.me/sod1q4ik" target="_blank" class="swiper-slide bg-blue-500 text-white text-xl font-semibold flex items-center justify-center h-60 rounded-lg hover:opacity-90 transition">
+        1-Slayd: Telegramga o‘tish
+      </a>
+
+      <!-- 2 -->
+      <a href="https://t.me/sod1q4ik" target="_blank" class="swiper-slide bg-green-500 text-white text-xl font-semibold flex items-center justify-center h-60 rounded-lg hover:opacity-90 transition">
+        2-Slayd: Telegramga o‘tish
+      </a>
+
+      <!-- 3 -->
+      <a href="https://t.me/sod1q4ik" target="_blank" class="swiper-slide bg-purple-500 text-white text-xl font-semibold flex items-center justify-center h-60 rounded-lg hover:opacity-90 transition">
+        3-Slayd: Telegramga o‘tish
+      </a>
+
+      <!-- 4 -->
+      <a href="https://t.me/sod1q4ik" target="_blank" class="swiper-slide bg-pink-500 text-white text-xl font-semibold flex items-center justify-center h-60 rounded-lg hover:opacity-90 transition">
+        4-Slayd: Telegramga o‘tish
+      </a>
+
+      <!-- 5 -->
+      <a href="https://t.me/sod1q4ik" target="_blank" class="swiper-slide bg-yellow-500 text-white text-xl font-semibold flex items-center justify-center h-60 rounded-lg hover:opacity-90 transition">
+        5-Slayd: Telegramga o‘tish
+      </a>
+
+      <!-- 6-16 -->
+      <!-- Agar ko'proq slayd kerak bo'lsa, shunchaki nusxa olib rangini o'zgartirib qo'shishingiz mumkin -->
+
+    </div>
+
+    <!-- Navigatsiya (Nuqtalar) -->
+    <div class="swiper-pagination mt-4"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-12 text-gray-500 text-sm text-center">
+    &copy; 2025 Tailwind Sayt. Barcha huquqlar himoyalangan.
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+</body>
+</html>
